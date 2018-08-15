@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.user.jenga.Drawer5">
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="JENGA STORE"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="14sp"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <!--row 1-->
+
+        <!--column one-->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/drills"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/drills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drills @ Ksh1,000"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column two-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/hammer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/hammers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView3899"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hammer  Ksh600"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column three-->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:id="@+id/wheel"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/wheelbarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView389"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WheelBarrow  Ksh2,500"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--row 2-->
+
+        <!--column one-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:clickable="true"
+            android:id="@+id/plumbing"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/plumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView38999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plumber Set  Ksh3,000"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column two-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:id="@+id/spades"
+
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/spade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView389999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spade   Ksh500"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column three-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:id="@+id/spankit"
+
+            android:layout_rowWeight="1"
+            android:clickable="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/spanners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView3899999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spanner Set  Ksh6,500"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--row 3-->
+
+        <!--column one-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/cementba"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/cementbag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView38999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cement  Ksh800"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column two-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            app:cardElevation="8dp"
+            android:id="@+id/sawsaw"
+
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:background="@android:color/white"
+                    android:src="@drawable/saw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView389999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saw   Ksh1,200"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column three-->
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/kitkit"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/white"
+                    android:src="@drawable/toolset" />
+
+                <TextView
+                    android:id="@+id/textView38999998"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolset  Ksh9,500"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="7sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

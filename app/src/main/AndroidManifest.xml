@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.jenga">
+
+    <!-- the code below grants the app permission to access the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logom"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Drawer" />
+        <activity android:name=".Drawer2" />
+        <activity android:name=".Drawer3" />
+        <activity android:name=".Drawer4" />
+        <activity
+            android:name=".Drawer5"
+            android:label="Jenga Store"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Drawer6" />
+        <activity android:name=".contact" />
+        <activity android:name=".mix" />
+        <activity android:name=".bamburibuy" />
+        <activity android:name=".trianglebuy" />
+        <activity android:name=".dangotebuy" />
+        <activity android:name=".simbabuy" />
+        <activity android:name=".chimba" />
+        <activity android:name=".facebook" />
+        <activity android:name=".Instagram" />
+        <activity android:name=".Twitter"></activity>
+    </application>
+
+</manifest>
