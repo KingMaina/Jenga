@@ -26,12 +26,6 @@
         android:layout_below="@+id/textView22"
         android:layout_centerHorizontal="true" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="50sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/dagimage1" />
     <EditText
         android:id="@+id/editText5"
         android:textAlignment="center"
@@ -44,17 +38,21 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:enabled="false"
+        android:background="@drawable/simitidesign"
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="Purchase" />
+        android:text="Purchase"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="wrap_content"
+        android:layout_width="70sp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
@@ -67,9 +65,9 @@
         android:layout_height="wrap_content"
         android:text="Price per bag: Ksh750"
         android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:layout_below="@+id/ratingBar"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
 
     <TextView
         android:id="@+id/textView23"
@@ -85,14 +83,15 @@
         android:layout_marginEnd="19dp" />
 
     <Button
-        android:textColor="@android:color/black"
+        android:enabled="false"
+        android:textColor="@android:color/white"
         android:id="@+id/button3"
         android:paddingLeft="6sp"
         android:paddingRight="6sp"
         android:layout_width="wrap_content"
         android:layout_height="30sp"
         android:text="Check Total"
-        android:background="@drawable/cardview_style"
+        android:background="@drawable/simitidesign"
         android:layout_below="@+id/editText5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp" />

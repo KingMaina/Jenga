@@ -1,137 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@android:color/white"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
     tools:context="com.example.user.jenga.mix">
 
-    <ImageView
-        android:layout_marginBottom="3dp"
-        android:layout_marginRight="4dp"
-        android:background="@drawable/cardview_style"
-        android:id="@+id/imageView4"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:paddingTop="30dp"
-        android:paddingBottom="5dp"
-        app:srcCompat="@drawable/bamburi"
-        android:layout_above="@+id/textView16"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-
-    <TextView
-        android:id="@+id/textView15"
-        android:textColor="@android:color/black"
+    <RelativeLayout
+        android:layout_weight="2"
+        android:background="@android:color/white"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:text="Choose from the brands below"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="JENGA SIMITI"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
 
-    <ImageView
-        android:layout_marginTop="3dp"
-        android:background="@drawable/cardview_style"
-        android:paddingBottom="6dp"
-        android:paddingTop="4dp"
-        android:id="@+id/imageView5"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/bluetriangle"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_toRightOf="@+id/imageView4"
-        android:layout_toEndOf="@+id/imageView4"
-        android:layout_alignBottom="@+id/imageView4" />
-
-    <ImageView
-        android:paddingTop="30dp"
-        android:paddingBottom="5dp"
-        android:background="@drawable/cardview_style"
-        android:id="@+id/imageView6"
-        android:layout_width="200dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/cementbags"
-        android:layout_marginTop="18dp"
-        android:layout_below="@+id/textView16"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:paddingTop="5dp"
-        android:paddingBottom="6dp"
-        android:background="@drawable/cardview_style"
-        android:id="@+id/imageView7"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/simba"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/imageView6"
-        android:layout_toEndOf="@+id/imageView6"
-        android:layout_alignBottom="@+id/imageView6" />
-
-    <TextView
-        android:textColor="@android:color/black"
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="65dp"
-        android:layout_marginRight="65dp"
-        android:layout_toLeftOf="@+id/imageView5"
-        android:layout_toStartOf="@+id/imageView5"
-        android:text="Bamburi"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:textColor="@android:color/black"
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="37dp"
-        android:layout_marginRight="37dp"
-        android:text="Blue Triangle"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_alignBaseline="@+id/textView16"
-        android:layout_alignBottom="@+id/textView16"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:textColor="@android:color/black"
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView16"
-        android:layout_alignStart="@+id/textView16"
-        android:layout_below="@+id/imageView6"
-        android:text="Dangote"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:textColor="@android:color/black"
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView17"
-        android:layout_alignRight="@+id/textView17"
-        android:layout_below="@+id/imageView7"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:text="Simba"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="14sp"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
 
-</RelativeLayout>
+        <!--row 1-->
+
+        <!--column one-->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/simiti"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:src="@drawable/bamburi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:paddingTop="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bamburi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column two-->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/simiti2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:src="@drawable/simba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:paddingTop="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simba"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--row 2-->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/simiti3"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:src="@drawable/bluetriangle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:paddingTop="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Triangle"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/simiti4"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:src="@drawable/cementbags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:paddingTop="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dangote"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1.42" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+
+
+</LinearLayout>

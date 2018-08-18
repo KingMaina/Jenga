@@ -7,7 +7,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class contact extends AppCompatActivity {
+public class contactDesigners extends AppCompatActivity {
     List<Designers> designersList;
     ListView listView;
     @Override
@@ -20,7 +20,7 @@ public class contact extends AppCompatActivity {
         designersList.add(new Designers(R.drawable.lorraine,"Rose Maina","Kakamega","+254711847016"));
         designersList.add(new Designers(R.drawable.rehema,"Reshy Munyoki","Nakuru","+254723111225"));
         designersList.add(new Designers(R.drawable.thot,"Mary Abutia","Naivasha","+254723111226"));
-        listView = (ListView)findViewById(R.id.list2);
+        listView = findViewById(R.id.list2);
         DesignerAdapter adapter = new DesignerAdapter(this,R.layout.designer,designersList);
         listView.setAdapter(adapter);
     }

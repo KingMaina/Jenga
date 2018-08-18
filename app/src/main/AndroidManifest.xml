@@ -4,7 +4,6 @@
 
     <!-- the code below grants the app permission to access the internet. -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -24,27 +23,40 @@
         </activity>
         <activity
             android:name=".MainActivity2"
+            android:icon="@drawable/logo"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Drawer" />
-        <activity android:name=".Drawer2" />
-        <activity android:name=".Drawer3" />
-        <activity android:name=".Drawer4" />
+        <activity android:name=".Drawer"
+            android:label="Cotractors"/>
+        <activity android:name=".Drawer2"
+            android:label="Supplies"/>
+        <activity android:name=".Drawer4"
+            android:label="Hire"/>
         <activity
             android:name=".Drawer5"
             android:label="Jenga Store"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Drawer6" />
-        <activity android:name=".contact" />
+        <activity android:name=".Drawer6"
+            android:label="Frequently Asked Questions"/>
+        <activity android:name=".contactDesigners" />
         <activity android:name=".mix" />
         <activity android:name=".bamburibuy" />
         <activity android:name=".trianglebuy" />
         <activity android:name=".dangotebuy" />
         <activity android:name=".simbabuy" />
         <activity android:name=".chimba" />
-        <activity android:name=".facebook" />
+        <activity android:name=".facebook"/>
         <activity android:name=".Instagram" />
-        <activity android:name=".Twitter"></activity>
+        <activity android:name=".Twitter" />
+        <activity android:name=".contactEngineers" />
+        <activity android:name=".contactArchitects" />
+        <activity android:name=".contactRecruit" />
+        <activity
+            android:name=".Help"
+            android:label="Help" />
+        <activity android:name=".chonga"
+            android:label="Building Supplies"/>
+        <activity android:name=".kata"></activity>
     </application>
 
 </manifest>

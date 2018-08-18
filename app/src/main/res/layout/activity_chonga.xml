@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.jenga.chonga">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose from our variety of stone types" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:id="@+id/imageView29"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            app:srcCompat="@drawable/slabs" />
+
+            <TextView
+                android:layout_toRightOf="@+id/imageView29"
+                android:id="@+id/textView449"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stone Slabs"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button109"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView29"
+                android:layout_toEndOf="@+id/imageView29" />
+
+            <TextView
+                android:id="@+id/textView459"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stone slabs available at measurements(60*60)cm at Ksh 100 per slab."
+                android:layout_below="@+id/textView449"
+                android:layout_toRightOf="@+id/imageView29"
+                android:layout_toEndOf="@+id/imageView29"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:id="@+id/imageView21"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                app:srcCompat="@drawable/pavingblocks"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_toRightOf="@+id/imageView21"
+                android:id="@+id/textView441"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paving Blocks"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView21"
+                android:layout_toEndOf="@+id/imageView21" />
+
+            <TextView
+                android:id="@+id/textView451"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Measurements are available at (15*6)cm at Ksh 75 per block."
+                android:layout_below="@+id/textView441"
+                android:layout_toRightOf="@+id/imageView21"
+                android:layout_toEndOf="@+id/imageView21"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/bricks" />
+
+            <TextView
+                android:layout_toRightOf="@+id/imageView28"
+                android:id="@+id/textView448"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clay Bricks"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button108"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView28"
+                android:layout_toEndOf="@+id/imageView28" />
+
+            <TextView
+                android:id="@+id/textView458"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy clay bricks at measurements (6*4) inches for only Ksh 50 per block."
+                android:layout_below="@+id/textView448"
+                android:layout_toRightOf="@+id/imageView28"
+                android:layout_toEndOf="@+id/imageView28"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                app:srcCompat="@drawable/quarry"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/imageView2"
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stone Blocks"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Strong building stone blocks available at (30*17)cm only at Ksh 150 per block."
+                android:layout_below="@+id/textView44"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</ScrollView>

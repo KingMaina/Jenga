@@ -9,6 +9,7 @@
     android:background="@color/colorPrimary"
     android:gravity="center"
     tools:context="com.example.user.jenga.Drawer2">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -43,7 +44,6 @@
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -58,6 +58,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:background="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -68,6 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
                     android:text="Jenga"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -84,14 +86,13 @@
                     android:padding="5dp"
                     android:textAlignment="center"
                     android:text="Build your future"
-                    android:textColor="@android:color/darker_gray"
+                    android:textColor="@android:color/white"
                     android:textSize="15dp"
                     android:layout_weight="0.42" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="142dp"
@@ -108,20 +109,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingTop="5dp"
                     android:id="@+id/simiti"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
-                    android:background="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
                     android:src="@drawable/cement" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
                     android:text="Cement"
                     android:textStyle="bold" />
 
@@ -137,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:text="Get it from trusted suppliers"
-                    android:textColor="@android:color/darker_gray"
+                    android:textColor="@android:color/white"
                     android:textSize="11dp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -152,20 +156,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingTop="5dp"
                     android:id="@+id/mchanga"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
-                    android:background="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
                     android:src="@drawable/sandheap" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
                     android:text="Sand"
                     android:textStyle="bold" />
 
@@ -181,7 +189,7 @@
                     android:padding="1dp"
                     android:textStyle="bold"
                     android:text="Quality sand for strong structures"
-                    android:textColor="@android:color/darker_gray"
+                    android:textColor="@android:color/white"
                     android:textSize="11dp"
                     android:textAlignment="center"/>
             </LinearLayout>
@@ -201,15 +209,17 @@
             android:layout_margin="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingTop="5dp"
                     android:id="@+id/mawe"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
-                    android:background="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
                     android:src="@drawable/pavingblocks" />
 
                 <TextView
@@ -217,6 +227,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
                     android:text="Building Stones"/>
                 <View
                     android:layout_width="match_parent"
@@ -232,7 +243,7 @@
                     android:textSize="11dp"
                     android:text="Choose from bricks,quarry stones etc"
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
@@ -244,19 +255,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center" >
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:paddingTop="5dp"
                     android:id="@+id/mbao"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
-                    android:background="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
                     android:src="@drawable/house"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="@android:color/white"
                     android:layout_marginTop="10dp"
                     android:text="Wood"/>
                 <View
@@ -273,7 +287,7 @@
                     android:textAlignment="center"
                     android:text="Choose the best wood frames for you."
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>

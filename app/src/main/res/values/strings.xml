@@ -8,7 +8,11 @@
     <string name="homeask3">Architect: Kenneth Kamau.</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="help">If you encounter any problems while using our app,don\'t be afraid to send us an email.
+        Just click the button below and write us your problems.
+        Our support team will contact you as soon as possible.</string>
+    <string name="help1">PS:If you have problems with managing construction yourself,
+        consider hiring a Contractor.</string>
     <string name="action_about">About</string>
     <string name="action_help">Help</string>
 </resources>

@@ -1,6 +1,8 @@
 package com.example.user.jenga;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,24 +12,22 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
-
-import androidx.annotation.RecentlyNonNull;
-import androidx.annotation.RecentlyNullable;
 
 
 /**
  * Created by user on 15/08/2018.
  */
 
- class DesignerAdapter extends ArrayAdapter<Designers> {
+class DesignerAdapter extends ArrayAdapter<Designers> {
     Context mCtxDesign;
     int resourceDesign;
     List<Designers> listDesign;
 
-    public DesignerAdapter(@RecentlyNonNull @NonNull Context context, @LayoutRes int resource, @RecentlyNonNull @NonNull List<Designers> objects, Context mCtxDesign, int resourceDesign, List<Designers> listDesign) {
-        super(context, resource, objects);
+    public DesignerAdapter(Context mCtxDesign, int resourceDesign, List<Designers> listDesign) {
+        super(mCtxDesign, resourceDesign, listDesign);
         this.mCtxDesign = mCtxDesign;
         this.resourceDesign = resourceDesign;
         this.listDesign = listDesign;
@@ -35,14 +35,26 @@ import androidx.annotation.RecentlyNullable;
 
     @NonNull
     @Override
-    public View getView(int position, @RecentlyNullable @Nullable View convertView, @RecentlyNonNull @NonNull ViewGroup parent) {
+    public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(mCtxDesign);
-        View view = inflater.inflate(R.layout.designer,null);
+        View view = inflater.inflate(R.layout.designer, null);
 
-        TextView name = view.findViewById(R.id.textDesign2);
+        TextView name = view.findViewById(R.id.textDesign);
         TextView location = view.findViewById(R.id.textDesign2);
-        ImageView
-
+        ImageView pic = view.findViewById(R.id.circleDesign);
+        final Designers designers = listDesign.get(position);
+        name.setText(designers.getNameDesign());
+        location.setText(designers.getDescriptionDesign());
+        pic.setImageDrawable(mCtxDesign.getResources().getDrawable(designers.getImagedesign()));
+        view.findViewById(R.id.buttonDesign).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(mCtxDesign, "Phone Is " + designers.getPhoneNumberDesign(), Toast.LENGTH_SHORT).show();
+                Intent call = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", designers.getPhoneNumberDesign(), null));
+                mCtxDesign.startActivity(call);
+            }
+        });
+        return view;
     }
 }
 

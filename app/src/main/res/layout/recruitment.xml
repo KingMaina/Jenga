@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleRecruit"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bck" />
+
+
+    <TextView
+        android:id="@+id/textRecruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/circleRecruit"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textRecruit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textRecruit"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/circleRecruit"
+        android:layout_toRightOf="@+id/circleRecruit"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonRecruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/circleRecruit"
+        android:layout_toRightOf="@+id/circleRecruit"
+        android:background="@drawable/cardview_style"
+        android:text="Contact"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

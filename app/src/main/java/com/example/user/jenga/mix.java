@@ -3,19 +3,20 @@ package com.example.user.jenga;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageView;
 
 public class mix extends AppCompatActivity {
-    ImageView pic,pic2,pic3,pic4;
+    CardView pic,pic2,pic3,pic4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mix);
-        pic = (ImageView) findViewById(R.id.imageView4);
-        pic2 = (ImageView) findViewById(R.id.imageView5);
-        pic3 = (ImageView) findViewById(R.id.imageView6);
-        pic4 = (ImageView) findViewById(R.id.imageView7);
+        pic = findViewById(R.id.simiti);
+        pic2 = findViewById(R.id.simiti3);
+        pic3 = findViewById(R.id.simiti4);
+        pic4 = findViewById(R.id.simiti2);
 
         pic.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -13,7 +13,7 @@ public class facebook extends AppCompatActivity {
 
         webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
-        //webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         webView.loadUrl("https://www.facebook.com");
 
     }

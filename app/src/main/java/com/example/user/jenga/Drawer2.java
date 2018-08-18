@@ -13,10 +13,10 @@ public class Drawer2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer2);
 
-        cement = (ImageView) findViewById(R.id.simiti);
-        wood = (ImageView) findViewById(R.id.mbao);
-        stone = (ImageView) findViewById(R.id.mawe);
-        sand = (ImageView) findViewById(R.id.mchanga);
+        cement = findViewById(R.id.simiti);
+        wood = findViewById(R.id.mbao);
+        stone = findViewById(R.id.mawe);
+        sand = findViewById(R.id.mchanga);
 
         cement.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +31,22 @@ public class Drawer2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent ce = new Intent(getApplicationContext(),chimba.class);
                 startActivity(ce);
+                finish();
+            }
+        });
+        stone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cem = new Intent(getApplicationContext(),chonga.class);
+                startActivity(cem);
+                finish();
+            }
+        });
+        wood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ceme = new Intent(getApplicationContext(),kata.class);
+                startActivity(ceme);
                 finish();
             }
         });

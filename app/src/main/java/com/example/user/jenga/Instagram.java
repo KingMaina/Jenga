@@ -11,11 +11,12 @@ public class Instagram extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instagram);
 
-        webView = (WebView)findViewById(R.id.webig);
+        webView = findViewById(R.id.webig);
 
         webView.loadUrl("https://www.instagram.com");
 //        enable javascript
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
     }
 }

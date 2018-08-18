@@ -9,12 +9,6 @@ public class Here {
     int image;
     String name,description,phoneNumber;
 
-    public Here(int image,String name, String description){
-        this.image = image;
-        this.name = name;
-        this.description = description;
-    }
-
     public Here(int image, String name, String description, String phoneNumber) {
         this.image = image;
         this.name = name;

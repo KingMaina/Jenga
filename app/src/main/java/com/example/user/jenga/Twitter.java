@@ -13,10 +13,11 @@ public class Twitter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter);
 
-        webView = (WebView)findViewById(R.id.webtweet);
+        webView = findViewById(R.id.webtweet);
 
         webView.loadUrl("https://www.twitter.com");
 //        enable javascript
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
     }
 }

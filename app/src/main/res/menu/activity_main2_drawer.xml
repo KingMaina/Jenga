@@ -11,10 +11,6 @@
             android:icon="@drawable/ic_menu_manage"
             android:title="Supplies" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_local_shipping_black_24dp"
-            android:title="Transportation" />
-        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_person_add_black_24dp"
             android:title="Hire" />

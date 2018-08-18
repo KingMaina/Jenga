@@ -15,21 +15,15 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <RatingBar
-        android:id="@+id/ratingBar2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView10"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ratingBar2"
-        android:layout_centerHorizontal="true"
         android:text="Price per bag is: Ksh675"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
 
     <TextView
         android:id="@+id/textView25"
@@ -54,11 +48,12 @@
         android:inputType="number" />
 
     <Button
+        android:enabled="false"
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:background="@drawable/cardview_style"
+        android:textColor="@android:color/white"
+        android:background="@drawable/simitidesign"
         android:layout_below="@+id/editText4"
         android:paddingLeft="6sp"
         android:paddingRight="6sp"
@@ -66,10 +61,11 @@
         android:text="Check Total" />
 
     <Button
+        android:background="@drawable/simitidesign"
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:text="Purchase"
         android:layout_below="@+id/textView27"
         android:layout_centerHorizontal="true"
@@ -79,11 +75,13 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/ratingBar2"
-        android:layout_alignStart="@+id/ratingBar2"
-        android:layout_below="@+id/button4"
         android:layout_marginTop="19dp"
-        android:text="TOTAL:" />
+        android:text="TOTAL:"
+        android:layout_below="@+id/button4"
+        android:layout_toLeftOf="@+id/textView27"
+        android:layout_toStartOf="@+id/textView27"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
 
     <TextView
         android:id="@+id/textView27"

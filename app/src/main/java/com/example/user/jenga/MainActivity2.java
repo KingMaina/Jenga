@@ -3,9 +3,6 @@ package com.example.user.jenga;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -33,46 +30,46 @@ public class MainActivity2 extends AppCompatActivity
             public void onClick(View view) {
                 Intent face = new Intent(getApplicationContext(),facebook.class);
                 startActivity(face);
-                finish();
+            }
+        });
+        ig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent face = new Intent(getApplicationContext(),Instagram.class);
+                startActivity(face);
+            }
+        });
+        tweet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent face = new Intent(getApplicationContext(),Twitter.class);
+                startActivity(face);
             }
         });
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
-
-/*//        code for viewpager below
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
-
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
-
-        viewPager.setAdapter(viewPagerAdapter);*/
-
-
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-/*            Intent home = new Intent(getApplicationContext(),MainActivity2.class);
-            startActivity(home);
-            finish();*/
+            finish();
         }
     }
 
@@ -89,19 +86,15 @@ public class MainActivity2 extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
 
-
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_about) {
 
-            return true;
-        }else if (id == R.id.action_help){
-
+      if (id == R.id.action_help){
+            Intent helpme = new Intent(getApplicationContext(),Help.class);
+            startActivity(helpme);
             return true;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -115,20 +108,12 @@ public class MainActivity2 extends AppCompatActivity
             // Handle the actions
             Intent cont = new Intent(getApplicationContext(),Drawer.class);
             startActivity(cont);
-            finish();
-        } else if (id == R.id.nav_gallery) {
-//            Handle transport
-            Intent drive = new Intent(getApplicationContext(),Drawer3.class);
-            startActivity(drive);
-            finish();
-        } else if (id == R.id.nav_slideshow) {
+        }else if (id == R.id.nav_slideshow) {
             Intent labour = new Intent(getApplicationContext(),Drawer4.class);
             startActivity(labour);
-            finish();
         } else if (id == R.id.nav_manage) {
             Intent supply = new Intent(getApplicationContext(),Drawer2.class);
             startActivity(supply);
-            finish();
         } else if (id == R.id.nav_share) {
             Intent sendit=new Intent();
 //                assign intent action to perform
@@ -143,11 +128,9 @@ public class MainActivity2 extends AppCompatActivity
         }else if (id == R.id.nav_camera) {
             Intent buy = new Intent(getApplicationContext(),Drawer5.class);
             startActivity(buy);
-            finish();
         } else if (id == R.id.nav_faqs) {
             Intent faq = new Intent(getApplicationContext(),Drawer6.class);
             startActivity(faq);
-            finish();
         } else if (id == R.id.nav_phone) {
             String phonenumber="0700216997";
 //                intent allows you to perform an activity
@@ -157,7 +140,7 @@ public class MainActivity2 extends AppCompatActivity
             startActivity(callit);
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

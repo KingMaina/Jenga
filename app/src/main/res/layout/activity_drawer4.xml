@@ -8,7 +8,41 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     android:gravity="center"
-    tools:context="com.example.user.jenga.Drawer4">
+    tools:context="com.example.user.jenga.Drawer4"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="0.12">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/styleme"
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Jenga"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="0.34">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Hire some of our best Engineers and designers"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="142dp"
@@ -18,6 +52,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="160dp"
             android:layout_height="140dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
             android:layout_margin="10dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
@@ -37,6 +72,7 @@
                     android:src="@drawable/ic_color_lens_black_24dp" />
 
                 <TextView
+                    android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -55,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:padding="1dp"
                     android:text="Hire Designers for a perfect home makover"
-                    android:textColor="@android:color/darker_gray"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -64,6 +100,8 @@
             android:layout_width="160dp"
             android:layout_height="140dp"
             android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -82,6 +120,7 @@
                     android:src="@drawable/ic_person_add_black_24dp" />
 
                 <TextView
+                    android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -95,12 +134,13 @@
                     android:background="@color/lightgray" />
 
                 <TextView
+                    android:id="@+id/textView39"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:textAlignment="center"
                     android:text="Get in touch with labour recruitment"
-                    android:textColor="@android:color/darker_gray"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
                     android:textSize="10dp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -114,6 +154,7 @@
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
             android:layout_width="160dp"
             android:layout_height="140dp"
             android:layout_margin="10dp">
@@ -130,7 +171,9 @@
                     android:background="@drawable/circlebackgroundcolor"
                     android:padding="10dp"
                     android:src="@drawable/ic_terrain_black_24dp" />
+
                 <TextView
+                    android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -140,58 +183,64 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightgray"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="1dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textSize="5dp"
+                    android:textSize="10dp"
                     android:text="Get Engineers to scout the foundation."
                     android:padding="2dp"
                     android:textAlignment="center"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:paddingBottom="5dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
             android:layout_height="140dp"
             android:layout_margin="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:paddingTop="11sp"
+                android:gravity="center_horizontal">
 
                 <ImageView
                     android:id="@+id/image4"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpink"
+                    android:background="@drawable/circlebackgroundcolor"
                     android:padding="10dp"
                     android:src="@drawable/ic_image_black_24dp" />
+
                 <TextView
+                    android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Architects"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightgray"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="1dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textSize="5dp"
+                    android:textSize="10dp"
                     android:textAlignment="center"
                     android:text="Get your home layout done for you."
                     android:padding="2dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
+
 </LinearLayout>

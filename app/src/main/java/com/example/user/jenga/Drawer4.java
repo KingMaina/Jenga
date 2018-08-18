@@ -21,7 +21,7 @@ public class Drawer4 extends AppCompatActivity {
         designer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent design = new Intent(getApplicationContext(),contact.class);
+                Intent design = new Intent(getApplicationContext(),contactDesigners.class);
                 startActivity(design);
                 finish();
             }
@@ -30,7 +30,7 @@ public class Drawer4 extends AppCompatActivity {
         recruit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent hire = new Intent(getApplicationContext(),contact.class);
+                Intent hire = new Intent(getApplicationContext(),contactRecruit.class);
                 startActivity(hire);
                 finish();
             }
@@ -39,7 +39,7 @@ public class Drawer4 extends AppCompatActivity {
         engineer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent scout = new Intent(getApplicationContext(),contact.class);
+                Intent scout = new Intent(getApplicationContext(),contactEngineers.class);
                 startActivity(scout);
                 finish();
             }
@@ -48,7 +48,7 @@ public class Drawer4 extends AppCompatActivity {
         architect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent draw = new Intent(getApplicationContext(),contact.class);
+                Intent draw = new Intent(getApplicationContext(),contactArchitects.class);
                 startActivity(draw);
                 finish();
             }

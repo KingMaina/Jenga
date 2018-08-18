@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context="com.example.user.jenga.kata">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose from our variety of wood types" />
+        <TextView
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:id="@+id/textView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="After purchase,customer care will call to confirm measurements" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/imageViewwood"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                app:srcCompat="@drawable/beamwood" />
+
+            <TextView
+                android:layout_toRightOf="@+id/imageViewwood"
+                android:id="@+id/textViewwood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Beam wood"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/buttonwood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageViewwood"
+                android:layout_toEndOf="@+id/imageViewwood" />
+
+            <TextView
+                android:id="@+id/textViewwood2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Beam types are of different types and sizes.Standard size is(200*15*15)cm @Ksh50"
+                android:layout_below="@+id/textViewwood"
+                android:layout_toRightOf="@+id/imageViewwood"
+                android:layout_toEndOf="@+id/imageViewwood"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/imageViewwood2"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                app:srcCompat="@drawable/plywood"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_toRightOf="@+id/imageViewwood2"
+                android:id="@+id/textViewwood3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Plywood"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/buttonwood2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageViewwood2"
+                android:layout_toEndOf="@+id/imageViewwood2" />
+
+            <TextView
+                android:id="@+id/textViewwood4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Plywwod types vary in thickness and type.Standard rates are (1m*1m) @ksh25"
+                android:layout_below="@+id/textViewwood3"
+                android:layout_toRightOf="@+id/imageViewwood2"
+                android:layout_toEndOf="@+id/imageViewwood2"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewwood3"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/softboard" />
+
+            <TextView
+                android:layout_toRightOf="@+id/imageViewwood3"
+                android:id="@+id/textViewwood5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Softboard"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/buttonwood3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageViewwood3"
+                android:layout_toEndOf="@+id/imageViewwood3" />
+
+            <TextView
+                android:id="@+id/textViewwood6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy at measurements (6*4) inches for only Ksh 50 per block."
+                android:layout_below="@+id/textViewwood5"
+                android:layout_toRightOf="@+id/imageViewwood3"
+                android:layout_toEndOf="@+id/imageViewwood3"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewwood4"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                app:srcCompat="@drawable/dimensionallumber"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/imageViewwood4"
+                android:id="@+id/textViewwood7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lumber"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/buttonwood4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purchase"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageViewwood4"
+                android:layout_toEndOf="@+id/imageViewwood4" />
+
+            <TextView
+                android:id="@+id/textViewwood8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lumber available at (30*17)cm only at Ksh 150 per block."
+                android:layout_below="@+id/textViewwood7"
+                android:layout_toRightOf="@+id/imageViewwood4"
+                android:layout_toEndOf="@+id/imageViewwood4"
+                android:layout_marginTop="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+</ScrollView>
